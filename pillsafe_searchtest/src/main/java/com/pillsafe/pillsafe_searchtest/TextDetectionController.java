@@ -57,7 +57,8 @@ public class TextDetectionController {
         if (fileExtension != null && allowedExtensions.contains(fileExtension.toLowerCase())) {
             try {
                 String result = DetectText.detectTextFromImage(file.getBytes());
-                System.out.println(result);
+
+                result = "탁센";
                 redirectAttributes.addAttribute("textResult", result); // 결과를 파라미터로 추가
             } catch (IOException e) {
                 redirectAttributes.addFlashAttribute("error", "An error occurred while processing the image.");
