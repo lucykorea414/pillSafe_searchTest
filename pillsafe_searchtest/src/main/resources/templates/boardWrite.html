@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/board_write_style.css">
+    <link rel="shortcut icon" href="../static/favicon.ico">
+    <title>글쓰기</title>
+</head>
+<style>
+</style>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../static/logo.png" alt="필세이프 로고">
+        </div>
+    </header>
+    <main>
+        <div class="title-wrapper">
+            <h2>글쓰기</h2>
+        </div>
+        <div class="layout">
+                <div class="mb-3">
+                    <label for="exampleFormControlInput1" class="form-label">제목</label>
+                    <input type="text" name="title" id="exampleFormControlInput1" placeholder="제목을 입력해주세요.">
+                </div>
+                <br>
+                <div class="mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">내용</label><br>
+                    <textarea id="exampleFormControlTextarea1" name="content" rows="5" placeholder="내용을 입력해주세요."></textarea>
+                </div>
+                <div style="align-items: center; text-align: center">
+                    <button class="primary-button" onclick="location.href='/board/list'">작성 완료</button>
+                </div>
+        </div>
+    </main>
+</body>
+</html>
